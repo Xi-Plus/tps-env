@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
-RUN git clone --depth 1 https://github.com/ioi-2017/tps.git &&
-	cd tps &&
-	./install-tps.sh
+# RUN git clone --depth 1 https://github.com/ioi-2017/tps.git &&
+# 	cd tps &&
+# 	./install-tps.sh
 RUN wget https://github.com/jgm/pandoc/releases/download/2.10.1/pandoc-2.10.1-1-amd64.deb &&
 	dpkg -i pandoc-2.10.1-1-amd64.deb
 RUN add-apt-repository ppa:jonathonf/texlive-2019 &&
